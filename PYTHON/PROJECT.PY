@@ -47,7 +47,7 @@ def view_repair_orders():
             i = 0
             for order in repair_orders:
                 print("\n----------------------------")
-                print(f"Order ID    :{i}")
+                print(f"Order ID :{i}")
                 print(f"Customer Name:{order["name"]}")
                 print(f"Device Type: {order["device"]}")
                 print(f"Issue: {order["issue"]}")
