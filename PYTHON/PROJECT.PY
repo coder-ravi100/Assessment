@@ -1,6 +1,6 @@
 # ---------------------------------------------
 # FixTrack - Gadget Repair Tracking System
-# Console Based Python Project (Core Python)
+# Console Based Python Project
 # ---------------------------------------------
 
 # List to store all repair orders
