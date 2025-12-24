@@ -25,19 +25,32 @@ CREATE TABLE city (
     city_id INT PRIMARY KEY,
     city_name VARCHAR(50),
     country_id INT,
-    lst FLOAT,
-    Longs FLOAT,
     FOREIGN KEY (country_id) REFERENCES country(country_id)
 );
 
 -- City data 
 INSERT INTO city VALUES
-(1, 'Berlin', 52.5200008,13.404954, 1),    
-(2, 'Belgrade', 44.787197,20.457273, 2),     
-(3, 'Zagrade', 45.815399, 15.966568, 3),
-(4, 'New York',40.730610,-73935242, 4),
-(5, 'Los Angeles', 34.052235,-118.243683,4),
-(6, 'Warsaw' , 52.237049, 21.017532, 5);
+(1, 'Berlin', 1),    
+(2, 'Belgrade', 2),     
+(3, 'Zagrade', 3),
+(4, 'New York', 4),
+(5, 'Los Angeles', 4),
+(6, 'Warsaw' , 5);
 
+
+-- Customer table
+CREATE TABLE customer (
+    customer_id INT PRIMARY KEY,
+    customer_name VARCHAR(50),
+    city_id INT,
+    FOREIGN KEY (city_id) REFERENCES city(city_id)
+);
+
+-- Customer data 
+INSERT INTO customer VALUES
+(1, 'Jewelry', 1),     
+(2, 'Bakery', 1),    
+(3, 'Cafe', 2),   
+(4, 'Resturant', 3);   
 
 
