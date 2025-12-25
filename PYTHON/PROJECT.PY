@@ -7,7 +7,6 @@
 # Each repair order will be stored as a dictionary
 repair_orders = []
 
-
 # ---------------------------------------------
 # Function: Add a new repair order
 # ---------------------------------------------
@@ -31,7 +30,7 @@ def add_repair_order():
     repair_orders.append(order)
 
     # Confirmation message
-    print("Repair order added successfully!")
+    print("\nRepair order added successfully!")
 
 
 # ---------------------------------------------
