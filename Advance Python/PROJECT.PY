@@ -6,7 +6,8 @@ root = Tk()
 root.title("Simple Music Player")
 root.geometry("900x600")
 root.configure(bg="#98F28C")
-#root.resizable(False, False)
+root.resizable(False, False)
+#root.attributes('-alpha',1.25)
 
 # ---------------- Fonts ----------------
 title_font = ("Georgia", 26, "bold")
